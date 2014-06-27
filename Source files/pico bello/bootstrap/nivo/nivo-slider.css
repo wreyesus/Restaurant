@@ -1,0 +1,167 @@
+/*
+ * jQuery Nivo Slider v3.2
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+/* The Nivo Slider styles */
+.nivoSlider
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.nivoSlider img
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: none;
+}
+.nivo-main-image
+{
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 6;
+    display: none;
+    background: white;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice
+{
+    display: block;
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+    top: 0;
+}
+.nivo-box
+{
+    display: block;
+    position: absolute;
+    z-index: 5;
+    overflow: hidden;
+}
+.nivo-box img
+{
+    display: block;
+}
+
+/* Caption styles */
+.nivo-caption
+{
+    font-family: 'Swanky and Moo Moo'; 
+    text-shadow: 2px 2px 2px #aaa;
+    font-size: 42px;
+    height: 40px; 
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: transparant;
+    color: white;
+    width: 100%;
+    z-index: 8;
+    padding: 5px 10px;
+    opacity: 0.9;
+    display: none;
+    -moz-opacity: 0.9;
+    filter: alpha(opacity=9);
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+.nivo-caption p
+{
+    padding: 5px;
+    margin: 0;
+}
+.nivo-caption a
+{
+    display: inline !important;
+}
+.nivo-html-caption
+{
+    display: none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a
+{       
+    display: block;
+    width: 38px;
+    height: 40px;
+    text-indent: -9999px;
+    border: 0;
+    position: absolute;
+    top: 45%;
+    z-index: 9;
+    cursor: pointer;
+
+}
+.nivo-prevNav
+{
+    background-image: url(arrows.png) ;
+    background-position:0px 0;
+    top: 500px;
+    left: 50px;
+}
+.nivo-nextNav
+{
+    background-image: url(arrows.png) ;
+    background-position:38px 0;
+    top: 500px;
+    right: 50px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav
+{
+    bottom: 5px;
+    left: 50%;
+    text-align: center;
+    position: absolute;
+    display: block !important;
+}
+.nivo-controlNav a
+{
+    background-image: url(nav-button.png);
+    border: 0 none;
+    display: block;
+    float: left;
+    height: 10px;
+    margin-right: 7px;
+    text-indent: -9999px;
+    width: 10px;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    position: relative;
+    cursor: pointer;
+    z-index: 91;
+}
+.nivo-controlNav a.active
+{
+    background-position: 0pt -10px;
+}
+.nivo-caption
+{
+    bottom: 48px !important;
+}

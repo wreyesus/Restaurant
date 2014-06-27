@@ -1,0 +1,319 @@
+﻿body
+{
+    background-color: transparent;
+}
+
+html
+{
+    .element::-webkit-scrollbar { width: 0 !important }
+    .element { -ms-overflow-style: none; }
+    .element { overflow: -moz-scrollbars-none; }
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.row-offset-fix
+{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.text-align-center
+{
+    text-align: center;
+}
+
+.tafel
+{
+    border: 1px solid black;
+    margin: 3px;
+    padding: 0.5em;
+    width: 120px;
+    height: 120px;
+    overflow:hidden;
+}
+
+.tafeltext1
+{
+    position: absolute;
+    z-index: -1;
+}
+
+.tafeltext2
+{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    margin-right: 40%;
+    margin-bottom: 40%;
+}
+
+.tafeltext3
+{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+}
+
+.btnTafel
+{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.ui-interface-identifier
+{
+}
+
+.knopjetafel
+{
+    width: 120px;
+    height: auto;
+}
+
+.appitem
+{
+}
+
+.close
+{
+    height: auto;
+    width: auto;
+    z-index: 9999;
+    top: 0;
+}
+
+.float
+{
+    background: rgba(255,255,255, 0.8);
+}
+
+.navbar
+{
+    margin-bottom: 0px;
+}
+
+.logintable
+{
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.logintable td
+{
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.contact
+{
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+.contactinfo
+{
+    padding-top: 10px;
+}
+
+#slider
+{
+    margin: 0 auto;
+    text-align: center;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.ConEen
+{
+    background: url('/bootstrap/images/contact-background.jpg');
+    background-size: 100%;
+    background-size: cover;
+    height: 1200px;
+}
+
+.ConTwee
+{
+    background-color: rgba(255,255,255,0.6);
+    padding: 15px;
+    -moz-border-radius: 10px 0px 0px 10px;
+    -webkit-border-radius: 10px 0px 0px 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.ConDrie
+{
+    background-color: rgba(255,255,255,0.6);
+    padding: 15px;
+    -moz-border-radius: 0px 10px 10px 10px;
+    -webkit-border-radius: 0px 10px 10px 10px;
+    border-radius: 0px 10px 10px 10px;
+}
+
+.ReserEen
+{
+    background: url('/bootstrap/images/food 3.jpg');
+    background-size: 100%;
+    background-size: cover;
+    height: 1200px;
+}
+
+.ReserTwee
+{
+    background-color: rgba(255,255,255,0.6);
+    margin-bottom: 20px;
+}
+
+.ReserDrie
+{
+    background-color: rgba(255,255,255,0.6);
+    padding: 15px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.ReserVier
+{
+    background-color: rgba(255,255,255,0.6);
+    padding: 15px;
+    margin-top: 15px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.iframeregister
+{
+    height: 350px;
+    width: 400px;
+    frameborder: 0;
+    border: 0;
+    allowtransparency: true;
+    background-color: rgba(255,255,255,0.6);
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+.padding-left-none
+{
+    padding-left: 0;
+}
+
+.GridKlant
+{
+    width: 100%;
+    background-color: #fff;
+    margin: 2px 0 10px 0;
+    border: solid 1px #525252;
+    border-collapse: collapse;
+}
+.GridKlant td
+{
+    padding: 2px;
+    border: solid 1px #c1c1c1;
+    color: #717171;
+}
+.GridKlant th
+{
+    padding: 4px 2px;
+    color: #fff;
+    background: #424242 repeat-x top;
+    border-left: solid 1px #525252;
+    font-size: 0.9em;
+}
+.GridKlant .alt
+{
+    background: #fcfcfc repeat-x top;
+}
+.GridKlant .pgr
+{
+    background: #424242 repeat-x top;
+}
+.GridKlant .pgr table
+{
+    margin: 5px 0;
+}
+.GridKlant .pgr td
+{
+    border-width: 0;
+    padding: 0 6px;
+    border-left: solid 1px #666;
+    font-weight: bold;
+    color: #fff;
+    line-height: 12px;
+}
+.GridKlant .pgr a
+{
+    color: #666;
+    text-decoration: none;
+}
+.GridKlant .pgr a:hover
+{
+    color: #000;
+    text-decoration: none;
+}
+
+.float
+{
+    height: 100%;
+    width: 100%;
+    float: left;
+    margin: 0px;
+    padding: 200px;
+    top: 0;
+    position: absolute;
+    z-index: 9999;
+}
+
+.fc-event
+{
+    z-index: 999;
+}
+
+.contentblok1
+    {
+    padding: 15px; 
+    margin: 15px; 
+    border: 1px solid black; 
+    background: rgba(255,255,255,0.8);
+    }
+
+.contentblok2
+    {
+    padding: 15px; 
+    margin: 15px; 
+    border: 1px solid black; 
+    background: rgba(255,255,255,0.8);
+    }
+
+.contentblok3
+    {
+    padding: 15px;  
+    margin: 15px; 
+    border: 1px solid black; 
+    background: rgba(255,255,255,0.8);
+    }
+
+.contentblok4
+    {
+    bottom: 0; 
+    margin-top: -120px;
+    zoom:1; 
+    position:relative; 
+    border: 1px solid black; 
+    background: rgba(255,255,255, 0.8);
+    }
+    
+.defaultpage
+    {
+        background: url('/bootstrap/images/food 2.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover; 
+        -moz-background-size: cover; 
+        -o-background-size: cover; 
+        background-size: cover; 
+        height: 1000px;
+    }    

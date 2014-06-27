@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="personeel.master.cs" Inherits="pico_bello.personeel.personeel" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Swanky and Moo Moo">
+    <script type="text/javascript" src='/bootstrap/jquery.js'></script>
+    <script type="text/javascript" src='/bootstrap/js/bootstrap.js'></script>
+    <link type="text/css" href='/bootstrap/css/bootstrap.css' rel="stylesheet"/>
+    <link type="text/css" href='/bootstrap/style.css' rel="stylesheet"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Pico Bello</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+          <% string path = HttpContext.Current.Request.Url.AbsolutePath; %>
+            <li <% if(path == "/personeel/Default.aspx") { %> class="active" <% } %>> <a href="Default.aspx">Home</a></li>
+            <li <% if(path == "/personeel/reserveer.aspx") { %> class="active" <% } %>> <a href="reserveer.aspx">Reserveringen</a></li>
+            <li <% if(path == "/personeel/tafel.aspx") { %> class="active" <% } %>> <a href="tafel.aspx">Tafels</a></li>
+            <li <% if(path == "/personeel/menu.aspx") { %> class="active" <% } %>> <a href="menu.aspx">Menu Bestand</a></li>
+            <li <% if(path == "/personeel/klant.aspx") { %> class="active" <% } %>> <a href="klant.aspx">Klanten Bestand</a></li>
+            <li <% if(path == "/personeel/gebruiker.aspx") { %> class="active" <% } %>> <a href="gebruiker.aspx">Gebruiker Bestand</a></li>
+          </ul>
+          <% if ((int)Session["role"] > 0) { %>
+            <ul class="nav navbar-nav navbar-right">
+                <li><p class="navbar-text">Hallo <%=Session["username"]%></p></li>
+            </ul>
+            <form class="navbar-form navbar-right" method='get' action='/Logout.aspx'>
+                    <button type="submit" class="btn btn-default">Logout</button>
+            </form>
+          <% }  %>
+        </div>
+    </div>
+</nav>
+    <form id="form1" runat="server">
+    <div>
+        <% if (Convert.ToInt32(Session["role"]) >= 3 || HttpContext.Current.Request.Url.AbsolutePath == "/personeel/Default.aspx") { %>
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+        <% } %>
+    </div>
+    </form>
+</body>
+</html>
